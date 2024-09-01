@@ -6,34 +6,35 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="container mx-auto p-6 max-w-full md:max-w-[1152px]   text-white"
+      className="container mx-auto p-6 max-w-full md:max-w-[1152px]    text-softBlack"
     >
-      <div className="flex items-center mb-10">
+      
+
+      <div
+        className="mt-[-5px] w-full md:w-[900px] md:mr-5  h-[340px]"
+        data-aos="fade-up"
+      >
+        <div className="flex items-center mb-10 text-softBlue">
         <h2 className="text-[24px] md:text-[32px] lg:text-[32px] font-bold">
           Where I’ve Worked
         </h2>
-        <div className="ml-6 w-[20%] h-1 bg-gray-200"></div>
+        <div className="ml-6 w-[20%] h-1 bg-softBlue"></div>
       </div>
-
-      <div
-        className="mt-[-10px] w-full md:w-[900px] md:mr-5  h-[340px]"
-        data-aos="fade-up"
-      >
-        <div className="md:ml-1">
-        <div className=" mt-14  md:w-[900px]">
+        <div className="md:ml-1 ">
+        <div className=" mt-8  md:w-[900px]">
           <div className=" flex">
             <div className=" md:my-auto">
-        <MdWorkHistory className=" w-6 h-6"/>
+        <MdWorkHistory className="text-richGold w-6 h-6"/>
         </div>
         <div className="md:ml-1">
-          <h3 className="text-[22px] font-bold">
+          <h3 className="text-[22px] font-bold text-richGold">
             Front-End Developer Intern at American International University
             Bangladesh
           </h3>
           </div>
           </div>
           </div>
-          <p className="text-[13px] mt-1 text-gray-400">Aug 2023- Jan 2024</p>
+          <p className="text-[13px] mt-1 text-softBlue underline">Aug 2023- Jan 2024</p>
 
           <ul className="mt-3 space-y-3">
             <li className="text-[15px] flex items-start">
@@ -59,16 +60,16 @@ const Experience = () => {
         <div className=" mt-14  md:w-[900px]">
           <div className=" flex">
             <div className=" md:my-auto">
-        <MdWorkHistory className=" w-6 h-6"/>
+        <MdWorkHistory className="text-richGold w-6 h-6"/>
         </div>
         <div className="md:ml-2">
-          <h3 className="text-[22px] font-bold">
+          <h3 className="text-[22px] font-bold text-richGold">
             Junior Software Enginner at Sheikh Russel Digital Lab (SRDL
             Project)-Automind IT
           </h3>
           </div>
           </div>
-          <p className="text-[13px] mt-1 text-gray-400">April 2024- Present</p>
+          <p className="text-[13px] mt-1 text-softBlue underline">April 2024- Present</p>
 
           <ul className="mt-3 space-y-3">
             <li className="text-[13px] flex items-start">

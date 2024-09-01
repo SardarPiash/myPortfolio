@@ -14,7 +14,7 @@ export default function App() {
 
   // }
   return (
-    <div className=" bg-black font-notoSans">
+    <div className=" bg-[#1A1A1A] font-notoSans">
       <Navbar />
       <Hero />
       <About />
