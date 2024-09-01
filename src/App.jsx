@@ -5,6 +5,7 @@ import Experience from "./components/Experience/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/projects/Projects";
+import Footer from "./components/Footer";
 
 export default function App() {
   // const [showToast,setShowToast] = useState(flase)
@@ -20,6 +21,7 @@ export default function App() {
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -68,15 +69,14 @@ const Contact = () => {
 
     return (
         <div className='w-full md:w-ful'>
-        <div id='contact' className="text-center text-white w-[600px] md:mx-auto py-10 md:py-20" data-aos="fade-up">
+            <div className='mx-auto md:w-[700px] border rounded-sm border-white ' data-aos="fade-up">
+        <div id='contact' className="text-center text-white w-[600px] md:mx-auto py-10 md:py-20 " >
             <div className="px-5 md:px-0">
-                <p className="text-white text-lg mb-5" data-aos="fade-up">
-                    What's Next?
-                </p>
-                <h2 className="text-3xl md:text-5xl font-bold mb-5" data-aos="fade-up" style={{ color: "#F8F8FF" }}>
+                <h2 className="text-3xl md:text-5xl font-bold mb-5"  style={{ color: "#F8F8FF" }}>
                     Get In Touch
                 </h2>
-                <p className="text-base text-justify mb-10 md:w-[400px] mx-auto" data-aos="fade-up">
+                <div className='my-[-2rem] md:my-5 ml-6 md:ml-[120px] w-1/2 md:w-[360px] h-1 bg-white   '></div>
+                <p className="text-base text-justify mb-10 md:w-[400px] mx-auto" >
                     I’m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
                 </p>
                 
@@ -112,13 +112,18 @@ const Contact = () => {
                         type="submit"
                         className="mt-5 px-8 py-3 bg-transparent border border-white text-white font-bold rounded-none hover:bg-white hover:text-black transition-colors duration-300"
                     >
-                        Send
+                        <div className=' flex'>
+                            <div className='my-auto'><HiOutlineMail /></div>
+                            <div>Send</div>
+                        </div>
+                        
                     </button>
                     
                 </form>
                 
             </div>
             
+        </div>
         </div>
         <ToastContainer />
         </div>
