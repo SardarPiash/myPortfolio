@@ -10,8 +10,8 @@ const About = () => {
   }, []);
 
   return (
-    <div id='about' className='max-w-6xl px-6 py-16 mx-auto'>
-      <div className='flex items-center'>
+    <div id='about' className='max-w-6xl px-6 py-16 mx-auto '>
+      <div className='flex items-center '>
         <h2 className='text-2xl md:text-4xl font-bold mb-10 text-white' data-aos='fade-up'>
           About Me
         </h2>

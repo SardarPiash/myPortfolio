@@ -5,9 +5,9 @@ import { FcViewDetails } from "react-icons/fc";
 
 const Hero = () => {
     return (
-        <div className="container mx-auto p-0 max-w-[100%] md:max-w-[960px] lg:max-w-[1000px] ">
+        <div className="container mx-auto p-0 max-w-[100%] md:max-w-[1152px]">
 
-            <div className="px-2 py-[25px] mt-[10px] md:py-0 md:mt-[40px] lg:mt-[55px]">
+            <div className="px-2 py-[25px] mt-[10px] md:py-0 md:mt-[40px] lg:mt-[55px]  md:ml-[13px]">
                 <p className="text-base md:text-base lg:text-base" style={{color:"#F8F8FF"}}>Hi, I'm</p>
 
                 <h1 className="text-[30px] md:text-[50px]  font-bold text-white">Abu Shaleh Md. Kaium</h1>
