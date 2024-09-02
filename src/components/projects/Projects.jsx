@@ -27,9 +27,9 @@ const Projects = () => {
 
       <div className="mt-10 space-y-20">
         {projects.map((project, index) => (
-          <div>
+          <div key={index}>
             <div
-              key={index}
+              
               className={` grid grid-cols-1 md:grid-cols-2 gap-5 ${
                 index % 2 !== 0 ? "text-right" : ""
               }`}
