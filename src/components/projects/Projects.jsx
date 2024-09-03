@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="container mx-auto px-5 py-10 max-w-full md:max-w-7xl mt-36"
+      className="container mx-auto px-5 py-10 max-w-full md:max-w-7xl mt-[500px]"
     >
       <div className="flex flex-col md:flex-row items-center" data-aos="fade-up">
         <h2 className="text-2xl md:text-4xl font-bold text-softBlue text-center md:text-left">

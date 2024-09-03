@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full md:w-full mt-10 md:mt-0">
+    <div className="w-11/12 mx-auto md:w-full mt-10 md:mt-0">
       <div
         className="mx-auto md:w-[700px] border rounded-sm border-softBlue p-4 md:p-10"
         data-aos="fade-up"
@@ -75,8 +75,8 @@ const Contact = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-5 text-softBlue">
             Get In Touch
           </h2>
-          <div className="my-[-2rem] md:my-5 w-1/2 md:w-[360px] h-1 bg-softBlue mx-auto"></div>
-          <p className="text-base text-softBlack mb-10 w-full md:w-[400px] mx-auto">
+          <div className="my-[-2rem] mt-5 md:my-5 w-1/2 md:w-[360px] h-1 bg-softBlue mx-auto"></div>
+          <p className="text-base mt-[100px] text-softBlack mb-10 w-full md:w-[400px] mx-auto">
             I’m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
           </p>
 
