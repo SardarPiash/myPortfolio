@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="container mx-auto p-6 max-w-full md:max-w-[1152px]    text-softBlack"
+      className="container mx-auto p-6 max-w-full md:max-w-[1152px]    text-softBlack" 
     >
       
 

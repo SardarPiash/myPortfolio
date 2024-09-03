@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({ scrollToSection }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -11,20 +10,20 @@ export default function Navbar() {
     };
 
     return (
-        <header className="sticky top-0 w-full  z-50 text-[#D3D3D3] ">
-            <div className="flex items-center justify-between mx-auto md:h-[60px]  bg-[black]">
+        <header className="sticky top-0 w-full z-50 text-[#D3D3D3]">
+            <div className="flex items-center justify-between mx-auto  md:h-[60px] bg-[red] w-full">
                 <div className="flex items-center ml-8">
-                    <Link to="/" title="Home Page" className="flex items-center">
+                    <p title="Home Page" className="flex items-center">
                         <img src={logo} alt="logo" className="h-8 w-8 md:h-12 md:w-14 transform scale-150 transition-transform duration-300" />
-                    </Link>
+                    </p>
                 </div>
                 <div className="flex items-center space-x-1">
-                    <div className="hidden md:flex items-center space-x-5 mr-8 font-semibold text-base" >
-                        <Link to="/" className="hover:text-gray-500">Home</Link>
-                        <Link to="/" className="hover:text-gray-500">About</Link>
-                        <Link to="/" className="hover:text-gray-500">Experience</Link>
-                        <Link to="/" className="hover:text-gray-500">Projects</Link>
-                        <Link to="/" className="hover:text-gray-500">Contact</Link>
+                    <div className="hidden md:flex items-center space-x-5 mr-8 font-semibold text-base">
+                        <button onClick={() => scrollToSection('hero')} className="hover:text-gray-500">Home</button>
+                        <button onClick={() => scrollToSection('about')} className="hover:text-gray-500">About</button>
+                        <button onClick={() => scrollToSection('experience')} className="hover:text-gray-500">Experience</button>
+                        <button onClick={() => scrollToSection('projects')} className="hover:text-gray-500">Projects</button>
+                        <button onClick={() => scrollToSection('contact')} className="hover:text-gray-500">Contact</button>
                     </div>
                     <div className="md:hidden">
                         <button
@@ -32,7 +31,7 @@ export default function Navbar() {
                             aria-label="Open menu"
                             className="text-[#D3D3D3]"
                         >
-                            <AiOutlineMenu className="text-2xl" />
+                            <AiOutlineMenu className="text-2xl text-richGold" />
                         </button>
                     </div>
                 </div>
@@ -44,13 +43,13 @@ export default function Navbar() {
                         aria-label="Close menu"
                         className="self-end text-[#D3D3D3]"
                     >
-                        <AiOutlineClose className="text-2xl" />
+                        <AiOutlineClose className="text-2xl text-richGold" />
                     </button>
-                    <Link to="/" className="hover:text-gray-500 text-softBlack">Home</Link>
-                    <Link to="#about" className="hover:text-gray-500 text-softBlack">About</Link>
-                    <Link to="#experience" className="hover:text-gray-500 text-softBlack">Experience</Link>
-                    <Link to="#project" className="hover:text-gray-500 text-softBlack">Projects</Link>
-                    <Link to="#contact" className="hover:text-gray-500 text-softBlack">Contact</Link>
+                    <button onClick={() => { scrollToSection('hero'); toggleMenu(); }} className="hover:text-gray-500">Home</button>
+                    <button onClick={() => { scrollToSection('about'); toggleMenu(); }} className="hover:text-gray-500">About</button>
+                    <button onClick={() => { scrollToSection('experience'); toggleMenu(); }} className="hover:text-gray-500">Experience</button>
+                    <button onClick={() => { scrollToSection('projects'); toggleMenu(); }} className="hover:text-gray-500">Projects</button>
+                    <button onClick={() => { scrollToSection('contact'); toggleMenu(); }} className="hover:text-gray-500">Contact</button>
                 </div>
             )}
         </header>

@@ -10,7 +10,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id='about' className='max-w-6xl px-6 py-10 md:mt-6 mx-auto '>
+    <div id='about' className='max-w-6xl px-6 py-10 md:mt-6 mx-auto ' >
       <div  data-aos='fade-up ' >
         <div className='flex items-center text-softBlue'>
         <h2 className='text-2xl md:text-4xl font-bold mb-10 ' >
