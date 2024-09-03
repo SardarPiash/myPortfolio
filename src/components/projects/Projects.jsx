@@ -16,74 +16,67 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="container mx-auto md:ml-[180px] px-5 py-10 max-w-7xl mt-36"
+      className="container mx-auto px-5 py-10 max-w-full md:max-w-7xl mt-36"
     >
-      <div className="flex items-center" data-aos="fade-up">
-        <h2 className="text-2xl md:text-4xl  font-bold text-softBlue">
+      <div className="flex flex-col md:flex-row items-center" data-aos="fade-up">
+        <h2 className="text-2xl md:text-4xl font-bold text-softBlue text-center md:text-left">
           Some Things I’ve Built
         </h2>
-        <div className="ml-6 w-1/5 h-1 bg-softBlue"></div>
+        <div className="mt-2 md:mt-0 md:ml-6 w-full md:w-1/5 h-1 bg-softBlue"></div>
       </div>
 
       <div className="mt-10 space-y-20">
         {projects.map((project, index) => (
           <div key={index}>
             <div
-              
-              className={` grid grid-cols-1 md:grid-cols-2 gap-5 ${
-                index % 2 !== 0 ? "text-right" : ""
+              className={`grid grid-cols-1 md:grid-cols-2 gap-5 ${
+                index % 2 !== 0 ? "md:text-right" : ""
               }`}
               data-aos="fade-up"
             >
               {index % 2 !== 0 && (
-                <div className=" ">
-                  <div className="order-2 md:order-1 text-left md:ml-2 md:mt-1">
-                    <div>
-                      <h3 className="text-softBlue text-base underline ">
-                        Featured Project
-                      </h3>
-                      <h4 className="text-2xl font-bold text-richGold">
-                        {project.title}
-                      </h4>
-                      <div className="relative">
-                        <div className="mt-5 p-6 bg-[#2E2E2E] text-softBlack text-base rounded-md shadow-md">
-                          {project.des}
-                        </div>
+                <div className="md:order-1 text-left md:ml-2 md:mt-1">
+                  <div>
+                    <h3 className="text-softBlue text-base underline">
+                      Featured Project
+                    </h3>
+                    <h4 className="text-2xl font-bold text-richGold">
+                      {project.title}
+                    </h4>
+                    <div className="relative mt-5 p-6 bg-[#2E2E2E] text-softBlack text-base rounded-md shadow-md">
+                      {project.des}
+                    </div>
+                    <div className="mt-5 grid grid-cols-2 md:grid-cols-3 gap-2">
+                      {project.tech.map((tech, techIndex) => (
+                        <span
+                          className="text-richGold text-sm"
+                          key={techIndex}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex justify-start gap-2 mt-5">
+                      <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
+                        <a href="#" className="text-red">
+                          <FiGithub size={23} />
+                        </a>
                       </div>
-                      <div className="mt-5 grid grid-cols-2 md:grid-cols-3 gap-2 ">
-                        {project.tech.map((tech, techIndex) => (
-                          <span
-                            className="text-richGold md:text-sm"
-                            key={techIndex}
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                      <div className="flex justify-start gap-2 mt-5">
-                        <div className="bg-[black] md:w-9 md:h-9 rounded-full flex items-center justify-center">
-                          <a href="#" className="text-red">
-                            <FiGithub size={23} />
-                          </a>
-                        </div>
-                        <div className="bg-[black] md:w-9 md:h-9 rounded-full flex items-center justify-center">
-                          <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-red"
-                          >
-                            <TbBrandCodepen size={24} />
-                          </a>
-                        </div>
+                      <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-red"
+                        >
+                          <TbBrandCodepen size={24} />
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               )}
-              <div
-                className={`order-${index % 2 !== 0 ? "1" : "2"} md:order-2`}
-              >
+              <div className={`order-${index % 2 !== 0 ? "1" : "2"} md:order-2`}>
                 <a
                   href={project.imglink}
                   target="_blank"
@@ -111,7 +104,7 @@ const Projects = () => {
                     <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-2 text-softBlack">
                       {project.tech.map((tech, techIndex) => (
                         <span
-                          className="text-richGold md:text-sm"
+                          className="text-richGold text-sm"
                           key={techIndex}
                         >
                           {tech}
@@ -119,12 +112,12 @@ const Projects = () => {
                       ))}
                     </div>
                     <div className="flex justify-start gap-2 mt-5">
-                      <div className="bg-[black] md:w-9 md:h-9 rounded-full flex items-center justify-center">
+                      <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
                         <a href="#" className="text-red">
                           <FiGithub size={23} />
                         </a>
                       </div>
-                      <div className="bg-[black] md:w-9 md:h-9 rounded-full flex items-center justify-center">
+                      <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
                         <a
                           href={project.link}
                           target="_blank"
@@ -139,13 +132,11 @@ const Projects = () => {
                 </div>
               )}
             </div>
-            {projects && index < projects.length - 1 ? (
+            {projects && index < projects.length - 1 && (
               <div
                 className="w-full h-[1px] md:mt-10 bg-softBlue"
                 data-aos="fade-up"
               ></div>
-            ) : (
-              <div></div>
             )}
           </div>
         ))}
