@@ -21,7 +21,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS service configuration with provided IDs
     const serviceID = "service_dsg2fg6";
     const templateID = "template_nw2tje8";
     const userID = "G-EDaPLjHnaiKHegg";
@@ -59,7 +58,6 @@ const Contact = () => {
       }
     );
 
-    // Reset form fields after submission
     setFormData({
       name: "",
       email: "",
@@ -68,65 +66,56 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full md:w-ful md:mt-10">
+    <div className="w-full md:w-full mt-10 md:mt-0">
       <div
-        className="mx-auto md:w-[700px] border rounded-sm border-softBlue "
+        className="mx-auto md:w-[700px] border rounded-sm border-softBlue p-4 md:p-10"
         data-aos="fade-up"
       >
-        <div
-          id="contact"
-          className="text-center text-white w-[600px] md:mx-auto py-10 md:py-20 "
-        >
-          <div className="px-5 md:px-0">
-            <h2 className="text-3xl md:text-5xl font-bold mb-5 text-softBlue">
-              Get In Touch
-            </h2>
-            <div className="my-[-2rem] md:my-5 ml-6 md:ml-[120px] w-1/2 md:w-[360px] h-1 bg-softBlue   "></div>
-            <p className="text-base text-softBlack  mb-10 md:w-[400px] mx-auto">
-              I’m currently looking for new opportunities, my inbox is always
-              open. Whether you have a question or just want to say hi, I’ll try
-              my best to get back to you!
-            </p>
+        <div id="contact" className="text-center text-white w-full md:w-[600px] mx-auto py-10 md:py-20">
+          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-softBlue">
+            Get In Touch
+          </h2>
+          <div className="my-[-2rem] md:my-5 w-1/2 md:w-[360px] h-1 bg-softBlue mx-auto"></div>
+          <p className="text-base text-softBlack mb-10 w-full md:w-[400px] mx-auto">
+            I’m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+          </p>
 
-            {/* Form starts here */}
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Your Name"
-                className="w-full px-3 py-2 bg-[#1A1A1A] border rounded border-softBlue text-softBlack placeholder-softBlack focus:outline-none"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Your Email"
-                className="w-full px-3 py-2 bg-[#1A1A1A] border rounded border-softBlue text-softBlack placeholder-softBlack focus:outline-none"
-                required
-              />
-              <textarea
-                name="query"
-                value={formData.query}
-                onChange={handleChange}
-                placeholder="Your Query"
-                className="w-full px-3 py-2 bg-[#1A1A1A] border rounded border-softBlue text-softBlack placeholder-softBlack focus:outline-none h-32"
-                required
-              ></textarea>
+          {/* Form starts here */}
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              className="w-full px-3 py-2 bg-[#1A1A1A] border rounded border-softBlue text-softBlack placeholder-softBlack focus:outline-none"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              className="w-full px-3 py-2 bg-[#1A1A1A] border rounded border-softBlue text-softBlack placeholder-softBlack focus:outline-none"
+              required
+            />
+            <textarea
+              name="query"
+              value={formData.query}
+              onChange={handleChange}
+              placeholder="Your Query"
+              className="w-full px-3 py-2 bg-[#1A1A1A] border rounded border-softBlue text-softBlack placeholder-softBlack focus:outline-none h-32"
+              required
+            ></textarea>
 
-              <button className="mx-auto mt-12 px-6 py-2 bg-[#4A4A4A] text-[#FFFFFF] hover:bg-[#2C3E50] hover:text-[#E0E0E0] border border-transparent rounded flex items-center">
-                <div className=" flex">
-                  <div className="my-auto">
-                    <HiOutlineMail />
-                  </div>
-                  <div className="ml-1">Send</div>
-                </div>
-              </button>
-            </form>
-          </div>
+            <button className="mx-auto mt-12 px-6 py-2 bg-[#4A4A4A] text-[#FFFFFF] hover:bg-[#2C3E50] hover:text-[#E0E0E0] border border-transparent rounded flex items-center">
+              <div className="flex">
+                <HiOutlineMail className="mr-2" />
+                <span>Send</span>
+              </div>
+            </button>
+          </form>
         </div>
       </div>
       <ToastContainer />
