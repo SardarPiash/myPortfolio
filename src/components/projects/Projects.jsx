@@ -2,12 +2,18 @@ import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { TbBrandCodepen } from "react-icons/tb";
 import { projectData } from "../../data/Data";
-import img1 from "../../assets/img_1.png";
-import img2 from "../../assets/img_2.jpg";
-import img3 from "../../assets/img_3.png";
+import img1 from "../../assets/tasker.png";
+import img2 from "../../assets/movie.png";
+import img3 from "../../assets/book.png";
+import img4 from "../../assets/aiub.png";
+import img5 from "../../assets/construction.png";
+import img6 from "../../assets/munchies.png";
+import img7 from "../../assets/queue.png";
+import img8 from "../../assets/zim.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
-  const img = [img1, img2, img3];
+  const img = [img1, img2, img3, img4, img5, img6, img7, img8];
   const projects = projectData.map((project, index) => ({
     ...project,
     img: img[index] || null,
@@ -43,7 +49,7 @@ const Projects = () => {
                     <h4 className="text-2xl font-bold text-richGold">
                       {project.title}
                     </h4>
-                    <div className="relative mt-5 p-6 bg-[#2E2E2E] text-softBlack text-base rounded-md shadow-md">
+                    <div className="relative mt-5 p-6 bg-[#2E2E2E] text-softBlack text-justify text-sm rounded-md shadow-md">
                       {project.des}
                     </div>
                     <div className="mt-5 grid grid-cols-2 md:grid-cols-3 gap-2">
@@ -58,30 +64,21 @@ const Projects = () => {
                     </div>
                     <div className="flex justify-start gap-2 mt-5">
                       <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
-                        <a href="#" className="text-red">
+                        <Link href={project.githublink} target="_blank" rel="noopener noreferrer" className="text-red">
                           <FiGithub size={23} />
-                        </a>
+                        </Link>
                       </div>
                       <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-red"
-                        >
+                        <Link to={project.Livelink} target="_blank" rel="noopener noreferrer" className="text-red">
                           <TbBrandCodepen size={24} />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
               )}
               <div className={`order-${index % 2 !== 0 ? "1" : "2"} md:order-2`}>
-                <a
-                  href={project.imglink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={project.imglink} target="_blank" rel="noopener noreferrer">
                   <img
                     src={project.img}
                     alt={project.title}
@@ -98,7 +95,7 @@ const Projects = () => {
                     <h4 className="text-2xl font-bold text-richGold">
                       {project.title}
                     </h4>
-                    <div className="mt-5 p-6 bg-[#2E2E2E] text-softBlack text-base rounded-md shadow-md">
+                    <div className="mt-5 p-6 bg-[#2E2E2E] text-softBlack text-justify text-sm rounded-md shadow-md">
                       {project.des}
                     </div>
                     <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-2 text-softBlack">
@@ -113,19 +110,14 @@ const Projects = () => {
                     </div>
                     <div className="flex justify-start gap-2 mt-5">
                       <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
-                        <a href="#" className="text-red">
+                        <Link to={project.githublink} target="_blank" rel="noopener noreferrer" className="text-red">
                           <FiGithub size={23} />
-                        </a>
+                        </Link>
                       </div>
                       <div className="bg-[black] w-9 h-9 rounded-full flex items-center justify-center">
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-red"
-                        >
+                        <Link to={project.Livelink} target="_blank" rel="noopener noreferrer" className="text-red">
                           <TbBrandCodepen size={24} />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

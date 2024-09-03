@@ -10,8 +10,8 @@ export default function Navbar({ scrollToSection }) {
     };
 
     return (
-        <header className="sticky top-0 w-full z-50 text-[#D3D3D3]">
-            <div className="flex items-center justify-between mx-auto md:h-[60px] bg-red-600 w-full">
+        <header className="sticky top-0 w-full z-50 text-[#D3D3D3] ">
+            <div className="flex items-center justify-between mx-auto md:h-[60px] bg-[black] w-full">
                 <div className="flex items-center ml-4 md:ml-8">
                     <p title="Home Page" className="flex items-center">
                         <img 
