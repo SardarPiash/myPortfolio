@@ -41,7 +41,7 @@ export default function Navbar({ scrollToSection }) {
                 </div>
             </div>
             {isOpen && (
-                <div className="md:hidden bg-[black] bg-opacity-90 h-screen w-3/5 absolute top-0 right-0 p-4 flex flex-col space-y-3 shadow-md">
+                <div className="md:hidden bg-[black] bg-opacity-95  h-screen w-3/5 absolute top-0 right-0 p-4 flex flex-col space-y-3 shadow-md">
                     <button
                         onClick={toggleMenu}
                         aria-label="Close menu"
@@ -49,11 +49,11 @@ export default function Navbar({ scrollToSection }) {
                     >
                         <AiOutlineClose className="text-2xl" />
                     </button>
-                    <button onClick={() => { scrollToSection('hero'); toggleMenu(); }} className="hover:text-gray-400 text-base font-semibold ">Home</button>
-                    <button onClick={() => { scrollToSection('about'); toggleMenu(); }} className="hover:text-gray-400 text-base font-semibold">About</button>
-                    <button onClick={() => { scrollToSection('experience'); toggleMenu(); }} className="hover:text-gray-400 text-base font-semibold">Experience</button>
-                    <button onClick={() => { scrollToSection('projects'); toggleMenu(); }} className="hover:text-gray-400 text-base font-semibold">Projects</button>
-                    <button onClick={() => { scrollToSection('contact'); toggleMenu(); }} className="hover:text-gray-400 text-base font-semibold">Contact</button>
+                    <button onClick={() => { scrollToSection('hero'); toggleMenu(); }} className="hover:text-gray-400 text-xl font-semibold text-left">Home</button>
+                    <button onClick={() => { scrollToSection('about'); toggleMenu(); }} className="hover:text-gray-400 text-xl font-semibold text-left">About</button>
+                    <button onClick={() => { scrollToSection('experience'); toggleMenu(); }} className="hover:text-gray-400 text-xl font-semibold text-left">Experience</button>
+                    <button onClick={() => { scrollToSection('projects'); toggleMenu(); }} className="hover:text-gray-400 text-xl font-semibold text-left">Projects</button>
+                    <button onClick={() => { scrollToSection('contact'); toggleMenu(); }} className="hover:text-gray-400 text-xl font-semibold text-left">Contact</button>
                 </div>
             )}
         </header>

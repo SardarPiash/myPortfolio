@@ -6,8 +6,9 @@ import linkedin from "../assets/linkedin.svg";
 
 export default function Footer() {
   return (
-    <div className=' md:h-[80px] bg-[black]' >
-         <div className="border-t-[1px] border-softBlue mt-16  pt-4 flex flex-col items-center lg:flex-row lg:justify-between">
+    <>
+    <div className=' md:h-[80px] bg-[black] ' >
+         <div className="border-t-[1px] border-softBlue mt-16   pt-4 flex flex-col items-center lg:flex-row lg:justify-between">
           <div className="text-softBlack text-sm text-center lg:text-left md:ml-5">
             © Copyright 2024 “Kaium” All Rights Reserved
           </div>
@@ -23,5 +24,9 @@ export default function Footer() {
           </div>
         </div>
     </div>
+    <div className='w-full h-3 md:h-1 bg-[black]'>
+       
+    </div>
+    </>
   )
 }
