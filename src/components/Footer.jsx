@@ -3,8 +3,16 @@ import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const data =[
+    'https://github.com/SardarPiash',
+    'https://www.linkedin.com/in/abu-shaleh-md-kaium-33968b1b0/',
+    'https://www.facebook.com/piash.sardar',
+    '#'
+
+  ]
   return (
     <>
     <div className=' md:h-[80px] bg-[black] ' >
@@ -16,9 +24,9 @@ export default function Footer() {
             <span className="text-sm mr-4 text-softBlack">Follow us</span>
             <div className="flex space-x-4">
               {[github,linkedin,facebook, instagram].map((icon, index) => (
-                <a href="/" key={index} className="bg-[white] w-7 h-7 rounded-full flex items-center justify-center">
+                <Link to={data[index]} key={index} className="bg-[white] w-7 h-7 rounded-full flex items-center justify-center">
                   <img className="p-1.5" src={icon} alt={`Social Icon ${index}`} />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
