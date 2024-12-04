@@ -6,35 +6,126 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="container mx-auto  p-6 max-w-full md:max-w-[1152px]    text-softBlack" 
+      className="container mx-auto  p-6 max-w-full md:max-w-[1152px]    text-softBlack"
     >
-      
-
       <div
         className="mt-[-5px] w-full md:w-[900px] md:mr-5  h-[340px]"
         data-aos="fade-up"
       >
         <div className="flex items-center mb-10 text-softBlue">
-        <h2 className="text-[24px] md:text-[32px] lg:text-[32px] font-bold">
-          Where I’ve Worked
-        </h2>
-        <div className="ml-6 w-[20%] h-1 bg-softBlue"></div>
-      </div>
-        <div className="md:ml-1 ">
-        <div className=" mt-8  md:w-[900px]">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[32px] font-bold">
+            Where I’ve Worked
+          </h2>
+          <div className="ml-6 w-[20%] h-1 bg-softBlue"></div>
+        </div>
+        {/* section-1 */}
+        <div className=" mt-0  md:w-[900px]">
           <div className=" flex">
             <div className=" md:my-auto">
-        <MdWorkHistory className="text-richGold w-6 h-6"/>
+              <MdWorkHistory className="text-richGold w-6 h-6" />
+            </div>
+            <div className="md:ml-2">
+              <h3 className="text-[22px] font-bold text-richGold">
+                Junior Software Engineer at Rokomari.com -Growth hack team
+              </h3>
+            </div>
+          </div>
+          <p className="text-[13px] mt-1 text-softBlue underline">
+            Nov 2024- Present
+          </p>
+
+          <ul className="mt-3 space-y-3">
+            <li className="text-[13px] flex items-start">
+              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
+              <div className="text-[15px]">
+                Solve technical issues and enhance frontend and backend through
+                efficient coding.
+              </div>
+            </li>
+
+            <li className="text-[13px] flex items-start">
+              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
+              <div className="text-[15px]">
+                Collaborate on feature development, A/B testing and proctor code
+                to drive growth.
+              </div>
+            </li>
+            <li className="text-[13px] flex items-start">
+              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
+              <div className="text-[15px]">
+                Contribute to idea generation and research to optimize growth
+                strategies.
+              </div>
+            </li>
+          </ul>
         </div>
-        <div className="md:ml-1">
-          <h3 className="text-[22px] font-bold text-richGold">
-            Front-End Developer Intern at American International University
-            Bangladesh
-          </h3>
+
+        {/* section-2 */}
+        <div className=" mt-14  md:w-[900px]">
+          <div className=" flex">
+            <div className=" md:my-auto">
+              <MdWorkHistory className="text-richGold w-6 h-6" />
+            </div>
+            <div className="md:ml-2">
+              <h3 className="text-[22px] font-bold text-richGold">
+                Junior Software Engineer at Sheikh Russel Digital Lab (SRDL
+                Project)-Automind IT
+              </h3>
+            </div>
           </div>
+          <p className="text-[13px] mt-1 text-softBlue underline">
+            April 2024- Present
+          </p>
+
+          <ul className="mt-3 space-y-3">
+            <li className="text-[13px] flex items-start">
+              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
+              <div className="text-[15px]">
+                Developed 2D games and simulations using JavaScript and canvas
+                frameworks (PIXI JS, Create JS, Zim JS).
+              </div>
+            </li>
+
+            <li className="text-[13px] flex items-start">
+              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
+              <div className="text-[15px]">
+                Collaborated on planning and testing with the software team. .
+              </div>
+            </li>
+            <li className="text-[13px] flex items-start">
+              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
+              <div className="text-[15px]">
+                Contributed to the development of a comprehensive news portal
+                that aggregates various newspapers into a single platform,
+                providing users with a centralized location for news access.
+                <a
+                  href="https://newscatbd.com/"
+                  className="text-softBlue underline"
+                >
+                  Domain
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {/* Section 3 */}
+        <div className="md:ml-1 ">
+          <div className=" mt-8  md:w-[900px]">
+            <div className=" flex">
+              <div className=" md:my-auto">
+                <MdWorkHistory className="text-richGold w-6 h-6" />
+              </div>
+              <div className="md:ml-1">
+                <h3 className="text-[22px] font-bold text-richGold">
+                  Front-End Developer Intern at American International
+                  University-Bangladesh
+                </h3>
+              </div>
+            </div>
           </div>
-          </div>
-          <p className="text-[13px] mt-1 text-softBlue underline">Aug 2023- Jan 2024</p>
+          <p className="text-[13px] mt-1 text-softBlue underline">
+            Aug 2023- Jan 2024
+          </p>
 
           <ul className="mt-3 space-y-3">
             <li className="text-[15px] flex items-start">
@@ -49,49 +140,9 @@ const Experience = () => {
 
             <li className="text-[15px] flex items-start">
               <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
-             
               Expertly integrated backend APIs and databases to provide
               real-time crop data, resulting in substantial enhancements to
               decision-making capabilities.
-             
-            </li>
-          </ul>
-        </div>
-        <div className=" mt-14  md:w-[900px]">
-          <div className=" flex">
-            <div className=" md:my-auto">
-        <MdWorkHistory className="text-richGold w-6 h-6"/>
-        </div>
-        <div className="md:ml-2">
-          <h3 className="text-[22px] font-bold text-richGold">
-            Junior Software Enginner at Sheikh Russel Digital Lab (SRDL
-            Project)-Automind IT
-          </h3>
-          </div>
-          </div>
-          <p className="text-[13px] mt-1 text-softBlue underline">April 2024- Present</p>
-
-          <ul className="mt-3 space-y-3">
-            <li className="text-[13px] flex items-start">
-              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
-              <div className="text-[15px]">
-              Developed 2D games and simulations using JavaScript and canvas
-              frameworks (PIXI JS, Create JS, Zim JS).
-              </div>
-            </li>
-
-            <li className="text-[13px] flex items-start">
-              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
-              <div className="text-[15px]">
-              Collaborated on planning and testing with the software team. .
-              </div>
-            </li>
-            <li className="text-[13px] flex items-start">
-              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
-              <div className="text-[15px]">
-              Contributed to micro-modular projects like games, simulations,
-              gamified learning modules, and interactive graphics.
-              </div>
             </li>
           </ul>
         </div>
