@@ -26,7 +26,7 @@ const Experience = () => {
             </div>
             <div className="md:ml-2">
               <h3 className="text-[22px] font-bold text-richGold">
-                Junior Software Engineer at Rokomari.com -Growth hack team
+                Junior Software Engineer at Rokomari.com -Software team
               </h3>
             </div>
           </div>
@@ -38,23 +38,23 @@ const Experience = () => {
             <li className="text-[13px] flex items-start">
               <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
               <div className="text-[15px]">
-                Solve technical issues and enhance frontend and backend through
-                efficient coding.
+                Worked on Rokomari’s live site using Next.js, JSTL, jQuery,
+                SCSS, and gained familiarity with Java Spring Boot.
               </div>
             </li>
 
             <li className="text-[13px] flex items-start">
               <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
               <div className="text-[15px]">
-                Collaborate on feature development, A/B testing and proctor code
-                to drive growth.
+                Collaborated with developers to build a new site using Next.js
+                and TypeScript, focusing on feature development and integration.
               </div>
             </li>
             <li className="text-[13px] flex items-start">
               <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
               <div className="text-[15px]">
-                Contribute to idea generation and research to optimize growth
-                strategies.
+                Contributed to UI improvements, performance optimization, bug
+                fixing, and implemented form validation solutions.
               </div>
             </li>
           </ul>

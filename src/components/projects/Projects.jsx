@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FiGithub } from "react-icons/fi";
 import { TbBrandCodepen } from "react-icons/tb";
 import { projectData } from "../../data/Data";
@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div
   id="projects"
-  className="container mx-auto px-5 py-10 max-w-full md:max-w-[1260px] mt-[800px] md:mt-80  md:mx-auto"
+  className="container mx-auto px-5 py-10 max-w-full md:max-w-[1260px] mt-[960px] md:mt-[420px]  md:mx-auto"
 >
   <div className="flex flex-col md:flex-row items-center" data-aos="fade-up">
     <h2 className="text-2xl md:text-4xl font-bold text-softBlue text-center md:text-left">
