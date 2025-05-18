@@ -38,23 +38,26 @@ const Experience = () => {
             <li className="text-[13px] flex items-start">
               <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
               <div className="text-[15px]">
-                Worked on Rokomari’s live site using Next.js, JSTL, jQuery,
-                SCSS, and gained familiarity with Java Spring Boot.
+              Developed and maintained features for the live site using jQuery, HTML, SCSS, JS, JSTL, and Next.js (TypeScript)
               </div>
             </li>
 
             <li className="text-[13px] flex items-start">
               <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
               <div className="text-[15px]">
-                Collaborated with developers to build a new site using Next.js
-                and TypeScript, focusing on feature development and integration.
+              Collaborated on the new platform's frontend using Next.js and integrated RESTful APIs via AJAX.
               </div>
             </li>
             <li className="text-[13px] flex items-start">
               <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
               <div className="text-[15px]">
-                Contributed to UI improvements, performance optimization, bug
-                fixing, and implemented form validation solutions.
+              Ensured secure frontend interactions, including form submissions and protected API calls.
+              </div>
+            </li>
+            <li className="text-[13px] flex items-start">
+              <MdCheckCircle className="text-gray-400 mr-2 mt-1" />
+              <div className="text-[15px]">
+              Contributed to A/B testing through idea generation and implementation to enhance UX and conversion.
               </div>
             </li>
           </ul>
